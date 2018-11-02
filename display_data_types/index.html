@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display data types</title>
+</head>
+<body>
+    <!-- <script src="js/main.js"></script> -->
+    <script>
+        // Array
+        var listNumbers = [1, 2, 3, 4, 5];
+
+        console.log(listNumbers);
+
+        // Object
+        // String
+        var name = "warnita";
+
+        console.log(name);
+        // Number
+        // Boolean
+        function checkValue (a, x) {
+        if (a.includes(x)) {
+            return true;
+        }
+
+        else{
+            return false;
+        }
+        }
+
+        console.log(checkValue([1, 2, 3, 'love', 4, 5], 'love'));
+
+        // Null
+        // Undefined
+        var firstName;
+
+        console.log(firstName);
+
+        // Date
+        var d = new Date();
+
+        console.log(d);
+    </script>
+</body>
+</html>
