@@ -7,6 +7,36 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="js/main.js"></script>
+
+    <h1>Please enter age (age verification)</h1>
+
+    <input id="age" >
+    <button type="button" onclick="myFunction()">Enter Your Age</button> 
+    <p id="demo"></p>
+
+    <script>
+    //     var age = Number(prompt("Please enter your age:"));
+    // if (age <= 17) {
+    // alert(" you are not allowed to view this site!");
+    // } else {
+    // alert(" you are allowed to view this site!");
+    // }
+
+    function myFunction(){
+        var age = Number(document.getElementById("age").value);
+        if (age <= 17){
+            vote="You are not old enough for this site";
+        } else {
+            vote = "Welcome";
+        }
+        document.getElementById("demo").innerHTML=vote;
+    }
+
+
+
+    
+    </script>
+    
+    <!-- <script src="js/main.js"></script> -->
 </body>
 </html>

@@ -4,3 +4,4 @@ if (age <= 17) {
 } else {
     alert(" you are allowed to view this site!");
 }
+
