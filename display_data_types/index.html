@@ -7,19 +7,44 @@
     <title>Display data types</title>
 </head>
 <body>
+    <p id="me"></p>
+
     <!-- <script src="js/main.js"></script> -->
     <script>
         // Array
-        var listNumbers = [1, 2, 3, 4, 5];
+        var listNumbers = [1, 2, 3, 4, 5,];
 
         console.log(listNumbers);
 
         // Object
+        // var student = 'Warnita Wilmisca Adams';
+        //     age = 20;
+        //     address = '25 West Linden Street Ravensmead';
+        //     course = 'coding course';
+
+        //     console.log("I am " + student + " and I am " + age + ". I live at " + address + ". I am currently doing a " + course + ".");
+
+        var student = {
+            firstName: "Warnita", 
+            age: 20, 
+            address: "25 West Linden street ravensmead", 
+            course:"coding course"
+            };
+                
+        console.log(student);
+
         // String
         var name = "warnita";
 
         console.log(name);
+
         // Number
+        var x = 3.14;
+        var y = 95;
+
+        console.log(x);
+        console.log(y);
+
         // Boolean
         function checkValue (a, x) {
         if (a.includes(x)) {
@@ -34,6 +59,9 @@
         console.log(checkValue([1, 2, 3, 'love', 4, 5], 'love'));
 
         // Null
+        // var location  = null;
+        // console.log(location);
+
         // Undefined
         var firstName;
 

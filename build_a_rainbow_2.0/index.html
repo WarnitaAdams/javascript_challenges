@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body> 
+
+    <!-- This is the start of the div container containing all of the colour names -->
+    <div class="container">  
+        <div id="red">red</div>
+        <div id="orange">orange</div>
+        <div id="yellow">yellow</div>
+        <div id="green">green</div>
+        <div id="blue">blue</div>
+        <div id="purple">purple</div>
+        <div id="violet">violet</div>
+    </div>
+    <!-- End of div container -->
+
+    <script>
+
+        // var allColours = ["red, orange, yellow, green, blue, purple, violet"];
+        // var i;
+        // for (i = 0; i < 7; i++){
+        //     allColours.push(i);
+        // } 
+
+        // var allColours = ("red(), orange, yellow, green, blue, purple, violet");
+        // var ourArray = [allColours];
+        // for (var i = 0; i < 7; i++) {
+        //     ourArray.push(i);
+        // }
+        // console.log(ourArray)
+
+        var allColours = "red orange yellow green blue purple violet";
+        allColours = allColours.split(" ");
+        for(var i = 0; i < allColours.length; i++){
+            document.getElementById(allColours[i]).style.backgroundColor = allColours[i];
+            console.log(allColours[i]);
+        }
+    
+    </script>
+   
+</body>
+</html>
