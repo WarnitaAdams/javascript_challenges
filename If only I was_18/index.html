@@ -26,12 +26,22 @@
         var age = Number(document.getElementById("age").value);
         if (age <= 17){
             vote="You are not old enough for this site";
-        } else {
+        } else if (age > 18){
             vote = "Welcome";
+        } else {
+            vote = "Please enter a valid number";
         }
         document.getElementById("demo").innerHTML=vote;
     }
 
+    // var number = Number(prompt("Enter a number:"));
+    // if (number > 0){
+    //     console.log(number + " is positive");
+    // } else if (number < 0){
+    //     console.log(number + " is negative");
+    // } else{
+    //     console.log(number + " is zero");
+    // }
 
 
     
