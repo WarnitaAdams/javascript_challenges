@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <div id="container">
+        <h2>Click on the calculation to figure out the answer:</h2>
+        <br>
+        <!-- When the button is clicked, the function inside runs -->
+        <button onclick="add()">95 + 5 =</button>
+        <button onclick="subtract()">59 - 9 =</button>
+        <button onclick="multi()">5 x 5 =</button>
+        <button onclick="divide()">95 / 5 =</button>
+
+        <h4 id="answer"></h4>
+
+    </div>
+
+    <script>  
+        // This is the function that adds the values
+        function add(a,b){
+            a = 95;
+            b = 5;  
+            let answerQuestion = document.getElementById("answer");
+            let theAnswer = (a) + (b);
+            // If the value is a number, continue
+            if (Number.isInteger(a & b)){
+                console.log(theAnswer);
+                answerQuestion.innerHTML = theAnswer;
+            }
+        }
+
+        // This is the function that subtracts the values
+        function subtract(a,b){
+            a = 59;
+            b = 9;  
+            let answerQuestion = document.getElementById("answer");
+            let theAnswer = (a) - (b);
+            // If the value is a number, continue
+            if (Number.isInteger(a & b)){
+                console.log(theAnswer);
+                answerQuestion.innerHTML = theAnswer;
+            }
+        }
+        // This is the function that multiplies the values
+        function multi(a,b){
+            a = 5;
+            b = 5;  
+            let answerQuestion = document.getElementById("answer");
+            let theAnswer = (a) * (b);
+            // If the value is a number, continue
+            if (Number.isInteger(a & b)){
+                console.log(theAnswer);
+                answerQuestion.innerHTML = theAnswer;
+            }
+        }
+        // This is the function that divides the values
+        function divide(a,b){
+            a = 95;
+            b = 5;  
+            let answerQuestion = document.getElementById("answer");
+            let theAnswer = (a) / (b);
+            // If the value is a number, continue
+            if (Number.isInteger(a & b)){
+                console.log(theAnswer);
+                answerQuestion.innerHTML = theAnswer;
+            }
+        }
+       
+    </script>
+
+</body>
+</html>
